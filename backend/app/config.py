@@ -1,10 +1,10 @@
 DATABASE = {
     'dev': {
-        'host': 'localhost',
-        'port': 3306,
-        'user': 'root',
-        'passwd': '123456'
+        'host': '',
+        'port': 10000,
+        'user': '',
+        'passwd': ''
     }
 }
 
-SECRET_KEY = 'utousagi'
+SECRET_KEY = ''

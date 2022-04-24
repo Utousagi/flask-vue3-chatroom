@@ -76,7 +76,7 @@ export default {
             .getElementsByClassName("msg-b-container")
             .item(document.getElementsByClassName("msg-b-container").length - 1)
             .scrollIntoView(false);
-        }, 20);
+        }, 30);
         this.message = "";
       }
     },

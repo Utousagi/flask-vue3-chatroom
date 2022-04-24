@@ -50,9 +50,6 @@ router.beforeEach((to, from) => {
   } else if (store.state.token) {
     return true;
   }
-  // if(from.path == "/" && /^\d+$/.test(to.path) {
-  //
-  // }
   return "/login";
 });
 

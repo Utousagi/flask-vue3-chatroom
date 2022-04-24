@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "fmt": "npx prettier --write .",
+    "serve": "vite preview --port 3000",
+    "fmt": "npx prettier --write ."
   },
   "dependencies": {
     "axios": "^0.26.1",

@@ -12,11 +12,8 @@ export default {
   name: "indexView",
   data() {
     return {
-      name: "uto",
+      name: "Hello",
     };
-  },
-  async mounted() {
-    this.name = (await axios.get("http://localhost:5000/")).data;
   },
 };
 </script>

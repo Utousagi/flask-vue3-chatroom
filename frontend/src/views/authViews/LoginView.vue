@@ -66,18 +66,10 @@ export default {
   methods: {
     async login() {
       try {
-        const res = await axios.post(
-          "http://localhost:5000/api/auth/login",
-          {
-            username: this.username,
-            password: this.password,
-          },
-          {
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-          }
-        );
+        const res = await axios.post("/api/auth/login", {
+          username: this.username,
+          password: this.password,
+        });
         const resData = res.data;
         if (resData.code === 200) {
           this.error = "";

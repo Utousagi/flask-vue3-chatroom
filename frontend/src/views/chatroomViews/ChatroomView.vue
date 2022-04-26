@@ -93,14 +93,11 @@ export default {
     },
   },
   async beforeCreate() {
-    const res = await axios.get(
-      "http://localhost:5000/api/chat/checkRoomExist",
-      {
-        params: {
-          roomId: this.$route.params.roomId,
-        },
-      }
-    );
+    const res = await axios.get("/api/chat/checkRoomExist", {
+      params: {
+        roomId: this.$route.params.roomId,
+      },
+    });
     const resData = res.data;
     if (!resData.data) {
       await this.$router.replace("/404");
@@ -115,7 +112,7 @@ export default {
       this.$store.state.user.username,
       this.roomId
     );
-    const res = await axios.get("http://localhost:5000/api/chat/getMessage", {
+    const res = await axios.get("/api/chat/getMessage", {
       params: {
         roomId: this.roomId,
         time: Date.now(),

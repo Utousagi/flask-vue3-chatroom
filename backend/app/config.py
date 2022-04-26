@@ -1,7 +1,7 @@
 DATABASE = {
     'dev': {
         'host': '',
-        'port': 0,
+        'port': 10000,
         'user': '',
         'passwd': ''
     }

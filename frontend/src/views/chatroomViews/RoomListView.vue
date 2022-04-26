@@ -97,7 +97,7 @@ export default {
       this.roomData = resData.data;
     },
     async reset() {
-      const res = await axios.get("http://localhost:5000/api/chat/listRoom");
+      const res = await axios.get("/api/chat/listRoom");
       const resData = res.data;
       this.roomData = resData.data;
     },

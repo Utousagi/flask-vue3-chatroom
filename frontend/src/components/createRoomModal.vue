@@ -77,15 +77,12 @@ export default {
       if (!this.name) {
         return;
       }
-      const res = await axios.post(
-        "http://localhost:5000/api/chat/createRoom",
-        {
-          name: this.name,
-          description: this.description,
-          private: this.private,
-          secret: this.secret,
-        }
-      );
+      const res = await axios.post("/api/chat/createRoom", {
+        name: this.name,
+        description: this.description,
+        private: this.private,
+        secret: this.secret,
+      });
       const resData = res.data;
       if (resData.code === 200) {
         const roomId = resData.data["id"];

@@ -2,23 +2,23 @@
 // We suggest you to commit this file into source control
 // Read more: https://github.com/vuejs/vue-next/pull/3399
 
-declare module 'vue' {
+declare module "vue" {
   export interface GlobalComponents {
-    AAvatar: typeof import('@arco-design/web-vue')['Avatar']
-    AButton: typeof import('@arco-design/web-vue')['Button']
-    ADivider: typeof import('@arco-design/web-vue')['Divider']
-    AForm: typeof import('@arco-design/web-vue')['Form']
-    AInput: typeof import('@arco-design/web-vue')['Input']
-    AInputPassword: typeof import('@arco-design/web-vue')['InputPassword']
-    AList: typeof import('@arco-design/web-vue')['List']
-    AModal: typeof import('@arco-design/web-vue')['Modal']
-    ASwitch: typeof import('@arco-design/web-vue')['Switch']
-    ATable: typeof import('@arco-design/web-vue')['Table']
-    ATextarea: typeof import('@arco-design/web-vue')['Textarea']
-    ChatMessage: typeof import('./src/components/chatMessage.vue')['default']
-    CreateRoomModal: typeof import('./src/components/createRoomModal.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    AAvatar: typeof import("@arco-design/web-vue")["Avatar"];
+    AButton: typeof import("@arco-design/web-vue")["Button"];
+    ADivider: typeof import("@arco-design/web-vue")["Divider"];
+    AForm: typeof import("@arco-design/web-vue")["Form"];
+    AInput: typeof import("@arco-design/web-vue")["Input"];
+    AInputPassword: typeof import("@arco-design/web-vue")["InputPassword"];
+    AList: typeof import("@arco-design/web-vue")["List"];
+    AModal: typeof import("@arco-design/web-vue")["Modal"];
+    ASwitch: typeof import("@arco-design/web-vue")["Switch"];
+    ATable: typeof import("@arco-design/web-vue")["Table"];
+    ATextarea: typeof import("@arco-design/web-vue")["Textarea"];
+    ChatMessage: typeof import("./src/components/chatMessage.vue")["default"];
+    CreateRoomModal: typeof import("./src/components/createRoomModal.vue")["default"];
+    HelloWorld: typeof import("./src/components/HelloWorld.vue")["default"];
   }
 }
 
-export { }
+export {};

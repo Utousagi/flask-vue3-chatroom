@@ -20,7 +20,7 @@ createApp(App)
   .use(
     new VueSocketIO({
       debug: true,
-      connection: SocketIO("http://localhost:5000"),
+      connection: SocketIO(":8082"),
       vuex: {
         store,
         actionPrefix: "SOCKET_",

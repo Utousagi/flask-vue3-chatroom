@@ -4,7 +4,7 @@ from app.exct.dbComp import db
 
 
 def register_components(app: Flask):
-    socket.init_app(app, cors_allowed_origins='*')
+    socket.init_app(app, cors_allowed_origins='*', port=5000)
 
     @app.before_request
     def connect_db():
